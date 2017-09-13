@@ -3,7 +3,7 @@ package com.crm.biz.sys.entity;
 /**
  * Created by Administrator on 2017/9/12.
  */
-public class User {
+public class SysUser {
     private String taskId;
     private String userName;
     private String userAccounts;

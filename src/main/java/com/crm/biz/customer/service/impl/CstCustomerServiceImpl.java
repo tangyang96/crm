@@ -5,5 +5,5 @@ import com.crm.biz.customer.service.ICstRecordService;
 /**
  * Created by Administrator on 2017/9/12.
  */
-public class LowCustServiceImpl implements ICstRecordService{
+public class CstCustomerServiceImpl implements ICstRecordService{
 }

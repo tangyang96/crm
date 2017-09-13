@@ -5,5 +5,5 @@ import com.crm.common.BaseController;
 /**
  * Created by Administrator on 2017/9/12.
  */
-public class LowCustController extends BaseController{
+public class CstLowCustController extends BaseController{
 }

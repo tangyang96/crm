@@ -6,7 +6,7 @@ import com.crm.common.BaseEntity;
  * Created by Administrator on 2017/9/12.
  * 标签表
  */
-public class Label extends BaseEntity{
+public class CstLabel extends BaseEntity{
     private String labelName;
     private String userId;
 

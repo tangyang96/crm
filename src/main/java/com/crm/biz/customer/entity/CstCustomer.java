@@ -6,7 +6,7 @@ import com.crm.common.BaseEntity;
  * Created by Administrator on 2017/9/12.
  * 客户表
  */
-public class Customer extends BaseEntity {
+public class CstCustomer extends BaseEntity {
     private String custName;
     private String custPhone;
     private String custEmail;

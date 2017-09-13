@@ -4,7 +4,7 @@ package com.crm.biz.customer.entity;
  * Created by Administrator on 2017/9/12.
  * 下级客户表
  */
-public class LowCust {
+public class CstLowCustomer {
     private String highCustId;
     private String custCompany;
     private String custId;
