@@ -1,4 +1,4 @@
-package com.crm.biz.customer.entity;
+package com.crm.entity;
 
 import com.crm.common.BaseEntity;
 

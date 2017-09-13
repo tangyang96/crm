@@ -1,6 +1,6 @@
 package com.crm.biz.customer.dao;
 
-import com.crm.biz.customer.entity.CstCustomer;
+import com.crm.entity.CstCustomer;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
@@ -12,6 +12,7 @@ import java.util.Date;
 /**
  * Created by Administrator on 2017/9/12.
  */
+@Component
 public interface CstCustomerMapper {
     @Select("select * from cst_customer")
     @Results({

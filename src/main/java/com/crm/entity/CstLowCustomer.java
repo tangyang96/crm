@@ -1,4 +1,4 @@
-package com.crm.biz.customer.entity;
+package com.crm.entity;
 
 /**
  * Created by Administrator on 2017/9/12.

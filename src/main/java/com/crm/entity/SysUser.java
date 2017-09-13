@@ -1,7 +1,8 @@
-package com.crm.biz.sys.entity;
+package com.crm.entity;
 
 /**
  * Created by Administrator on 2017/9/12.
+ * 用户表
  */
 public class SysUser {
     private Long taskId;

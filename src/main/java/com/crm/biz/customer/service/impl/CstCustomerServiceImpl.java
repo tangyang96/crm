@@ -1,9 +1,9 @@
 package com.crm.biz.customer.service.impl;
 
 import com.crm.biz.customer.dao.CstCustomerMapper;
-import com.crm.biz.customer.entity.CstCustomer;
 import com.crm.biz.customer.service.ICstCustomerService;
 import com.crm.biz.customer.service.ICstRecordService;
+import com.crm.entity.CstCustomer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;

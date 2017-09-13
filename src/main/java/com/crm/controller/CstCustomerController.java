@@ -1,9 +1,9 @@
 package com.crm.controller;
 
 import com.crm.biz.customer.dao.CstCustomerMapper;
-import com.crm.biz.customer.entity.CstCustomer;
 import com.crm.biz.customer.service.ICstCustomerService;
 import com.crm.common.BaseController;
+import com.crm.entity.CstCustomer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

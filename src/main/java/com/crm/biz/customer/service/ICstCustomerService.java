@@ -1,6 +1,7 @@
 package com.crm.biz.customer.service;
 
-import com.crm.biz.customer.entity.CstCustomer;
+
+import com.crm.entity.CstCustomer;
 
 /**
  * Created by Administrator on 2017/9/12.
