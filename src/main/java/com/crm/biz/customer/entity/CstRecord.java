@@ -6,10 +6,11 @@ import java.util.Date;
 
 /**
  * Created by Administrator on 2017/9/12.
+ * 记录表
  */
 public class CstRecord extends BaseEntity {
     private String reContent;
-    private String custId;
+    private Long custId;
     private String userName;
     private Date reDate;
 
@@ -21,11 +22,11 @@ public class CstRecord extends BaseEntity {
         this.reContent = reContent;
     }
 
-    public String getCustId() {
+    public Long getCustId() {
         return custId;
     }
 
-    public void setCustId(String custId) {
+    public void setCustId(Long custId) {
         this.custId = custId;
     }
 

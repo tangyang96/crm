@@ -4,17 +4,17 @@ package com.crm.biz.sys.entity;
  * Created by Administrator on 2017/9/12.
  */
 public class SysUser {
-    private String taskId;
+    private Long taskId;
     private String userName;
     private String userAccounts;
     private String userPassword;
     private Integer userStatus;
 
-    public String getTaskId() {
+    public Long getTaskId() {
         return taskId;
     }
 
-    public void setTaskId(String taskId) {
+    public void setTaskId(Long taskId) {
         this.taskId = taskId;
     }
 

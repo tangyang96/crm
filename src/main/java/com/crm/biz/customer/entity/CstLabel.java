@@ -8,7 +8,7 @@ import com.crm.common.BaseEntity;
  */
 public class CstLabel extends BaseEntity{
     private String labelName;
-    private String userId;
+    private Long userId;
 
     public String getLabelName() {
         return labelName;
@@ -18,11 +18,11 @@ public class CstLabel extends BaseEntity{
         this.labelName = labelName;
     }
 
-    public String getUserId() {
+    public Long getUserId() {
         return userId;
     }
 
-    public void setUserId(String userId) {
+    public void setUserId(Long userId) {
         this.userId = userId;
     }
 }

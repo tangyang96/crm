@@ -6,7 +6,7 @@ import java.util.Date;
 
 /**
  * Created by Administrator on 2017/9/12.
- * 记录表
+ * 记会表
  */
 public class CstChance extends BaseEntity {
     private String chContent;
@@ -15,7 +15,7 @@ public class CstChance extends BaseEntity {
     private Date chDate;
     private double chMoney;
     private String userName;
-    private String userId;
+    private Long userId;
 
     public String getChContent() {
         return chContent;
@@ -65,11 +65,11 @@ public class CstChance extends BaseEntity {
         this.userName = userName;
     }
 
-    public String getUserId() {
+    public Long getUserId() {
         return userId;
     }
 
-    public void setUserId(String userId) {
+    public void setUserId(Long userId) {
         this.userId = userId;
     }
 }

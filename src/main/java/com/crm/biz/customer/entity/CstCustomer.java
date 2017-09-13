@@ -15,7 +15,7 @@ public class CstCustomer extends BaseEntity {
     private String custIndustry;
     private String custPic;
     private String custSales;
-    private Integer userId;
+    private Long userId;
 
     public String getCustName() {
         return custName;
@@ -81,11 +81,11 @@ public class CstCustomer extends BaseEntity {
         this.custSales = custSales;
     }
 
-    public Integer getUserId() {
+    public Long getUserId() {
         return userId;
     }
 
-    public void setUserId(Integer userId) {
+    public void setUserId(Long userId) {
         this.userId = userId;
     }
 }

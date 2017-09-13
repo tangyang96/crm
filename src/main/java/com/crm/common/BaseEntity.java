@@ -6,14 +6,14 @@ import java.util.Date;
  * Created by Administrator on 2017/9/12.
  */
 public class BaseEntity  {
-    private String id;
+    private Long id;
     private Date ctime=new Date();
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
