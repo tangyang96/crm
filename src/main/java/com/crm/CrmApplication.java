@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan("com.crm")
-@MapperScan("com.crm.biz.customer.dao")
+@MapperScan("com.crm.biz.*.dao")
 public class CrmApplication {
 
 	public static void main(String[] args) {

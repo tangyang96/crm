@@ -1,12 +1,15 @@
 package com.crm.biz.customer.dao;
 
 import com.crm.entity.CstCustomer;
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
+import java.util.Set;
 
 /**
  * Created by Administrator on 2017/9/12.
@@ -28,5 +31,18 @@ public interface CstCustomerMapper{
     })
     CstCustomer findCstCustomer();
 
-    CstCustomer findById(Long id);
+//    CstCustomer findById(@Param("id") Long id);
+
+    /**
+     * 添加用户信息
+     * @param cstCustomer
+     */
+    void addCstCustomerInfo(CstCustomer cstCustomer);
+
+    /**
+     * 筛选客户
+     * @param cstCustomer
+     * @return
+     */
+    Set<CstCustomer> selectAllCstCustomesByScreen(CstCustomer cstCustomer);
 }

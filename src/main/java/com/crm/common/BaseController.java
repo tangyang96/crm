@@ -10,9 +10,9 @@ import javax.servlet.http.HttpSession;
  * Created by Administrator on 2017/9/12.
  */
 public class BaseController {
-    private HttpServletRequest request;
-    private HttpServletResponse response;
-    private HttpSession session;
+    protected HttpServletRequest request;
+    protected HttpServletResponse response;
+    protected HttpSession session;
 
     @ModelAttribute
     public void setReqAndRes(HttpServletRequest request, HttpServletResponse response) {

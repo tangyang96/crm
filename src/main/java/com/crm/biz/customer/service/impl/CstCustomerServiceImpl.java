@@ -9,6 +9,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
+import java.util.Set;
+
 /**
  * Created by Administrator on 2017/9/12.
  */
@@ -21,5 +23,17 @@ public class CstCustomerServiceImpl implements ICstCustomerService{
         CstCustomer cstCustomer=null;
         cstCustomer=cstCustomerMapper.findCstCustomer();
         return cstCustomer;
+    }
+
+    @Override
+    public void addCstCustomerInfo(CstCustomer cstCustomer) {
+        cstCustomerMapper.addCstCustomerInfo(cstCustomer);
+    }
+
+    @Override
+    public Set<CstCustomer> screenCstCustomers(CstCustomer cstCustomer) {
+        Set<CstCustomer> cstCustomers=null;
+        cstCustomerMapper.selectAllCstCustomesByScreen(cstCustomer);
+        return cstCustomers;
     }
 }
