@@ -4,7 +4,6 @@ import com.crm.entity.CstCustomer;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
@@ -13,7 +12,7 @@ import java.util.Date;
  * Created by Administrator on 2017/9/12.
  */
 @Component
-public interface CstCustomerMapper {
+public interface CstCustomerMapper{
     @Select("select * from cst_customer")
     @Results({
             @Result(property ="custName",column = "cust_name"),
@@ -28,4 +27,6 @@ public interface CstCustomerMapper {
             @Result(property ="ctime",column = "ctime",javaType = Date.class)
     })
     CstCustomer findCstCustomer();
+
+    CstCustomer findById(Long id);
 }
