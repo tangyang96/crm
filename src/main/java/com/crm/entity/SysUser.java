@@ -5,19 +5,15 @@ package com.crm.entity;
  * 用户表
  */
 public class SysUser {
-    private Long taskId;
-    private String userName;
-    private String userAccounts;
-    private String userPassword;
-    private Integer userStatus;
-
-    public Long getTaskId() {
-        return taskId;
-    }
-
-    public void setTaskId(Long taskId) {
-        this.taskId = taskId;
-    }
+  private  String userName;
+  private String userAccounts;
+  private String userPSassword;
+  private Integer userStatus;
+  private String userDepartment;
+  private String userPosition;
+  private String userEmail;
+  private String userPhone;
+  private String userWorkphone;
 
     public String getUserName() {
         return userName;
@@ -35,12 +31,12 @@ public class SysUser {
         this.userAccounts = userAccounts;
     }
 
-    public String getUserPassword() {
-        return userPassword;
+    public String getUserPSassword() {
+        return userPSassword;
     }
 
-    public void setUserPassword(String userPassword) {
-        this.userPassword = userPassword;
+    public void setUserPSassword(String userPSassword) {
+        this.userPSassword = userPSassword;
     }
 
     public Integer getUserStatus() {
@@ -49,5 +45,45 @@ public class SysUser {
 
     public void setUserStatus(Integer userStatus) {
         this.userStatus = userStatus;
+    }
+
+    public String getUserDepartment() {
+        return userDepartment;
+    }
+
+    public void setUserDepartment(String userDepartment) {
+        this.userDepartment = userDepartment;
+    }
+
+    public String getUserPosition() {
+        return userPosition;
+    }
+
+    public void setUserPosition(String userPosition) {
+        this.userPosition = userPosition;
+    }
+
+    public String getUserEmail() {
+        return userEmail;
+    }
+
+    public void setUserEmail(String userEmail) {
+        this.userEmail = userEmail;
+    }
+
+    public String getUserPhone() {
+        return userPhone;
+    }
+
+    public void setUserPhone(String userPhone) {
+        this.userPhone = userPhone;
+    }
+
+    public String getUserWorkphone() {
+        return userWorkphone;
+    }
+
+    public void setUserWorkphone(String userWorkphone) {
+        this.userWorkphone = userWorkphone;
     }
 }

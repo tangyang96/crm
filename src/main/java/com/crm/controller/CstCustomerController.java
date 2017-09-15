@@ -4,6 +4,8 @@ import com.crm.biz.customer.dao.CstCustomerMapper;
 import com.crm.biz.customer.service.ICstCustomerService;
 import com.crm.common.BaseController;
 import com.crm.entity.CstCustomer;
+import com.crm.entity.CstLabel;
+import com.crm.entity.CstLowCustomer;
 import com.crm.utils.ObjectUtil;
 import com.crm.utils.TypeUtil;
 import org.slf4j.Logger;
@@ -47,9 +49,9 @@ public class CstCustomerController extends BaseController{
      * @param cstCustomer
      */
     @RequestMapping("/addCstCustomerInfo")
-    public Map addCstCustomerInfo(CstCustomer cstCustomer){
+    public Map addCstCustomerInfo(CstCustomer cstCustomer, CstLowCustomer cstLowCustomer, CstLabel cstLabel){
         Map map=TypeUtil.successMap();
-        cstCustomerService.addCstCustomerInfo(cstCustomer);
+        cstCustomerService.addCstCustomerInfo(cstCustomer,cstLowCustomer,cstLabel);
         return map;
     }
 

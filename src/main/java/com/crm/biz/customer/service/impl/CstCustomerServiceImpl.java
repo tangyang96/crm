@@ -4,6 +4,8 @@ import com.crm.biz.customer.dao.CstCustomerMapper;
 import com.crm.biz.customer.service.ICstCustomerService;
 import com.crm.biz.customer.service.ICstRecordService;
 import com.crm.entity.CstCustomer;
+import com.crm.entity.CstLabel;
+import com.crm.entity.CstLowCustomer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
@@ -26,8 +28,8 @@ public class CstCustomerServiceImpl implements ICstCustomerService{
     }
 
     @Override
-    public void addCstCustomerInfo(CstCustomer cstCustomer) {
-        cstCustomerMapper.addCstCustomerInfo(cstCustomer);
+    public void addCstCustomerInfo(CstCustomer cstCustomer, CstLowCustomer cstLowCustomer, CstLabel cstLabel) {
+        cstCustomerMapper.addCstCustomerInfo(cstCustomer,cstLowCustomer,cstLabel);
     }
 
     @Override

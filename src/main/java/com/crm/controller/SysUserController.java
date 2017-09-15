@@ -34,10 +34,21 @@ public class SysUserController extends BaseController {
        return map;
     }
 
+    /**
+     * 用户退出
+     * @return
+     */
     @RequestMapping("/logout")
     public Map logout(){
         Map map=TypeUtil.successMap();
         session.setAttribute("sysUser",null);
+        return map;
+    }
+
+    @RequestMapping("/updateUserInfo")
+    public Map updateUserInfo(SysUser sysUser){
+        Map map=TypeUtil.successMap();
+        sysUserService.updateUserInfo(sysUser);
         return map;
     }
 }

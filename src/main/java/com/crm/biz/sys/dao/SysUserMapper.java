@@ -9,4 +9,6 @@ import org.springframework.stereotype.Component;
 @Component
 public interface SysUserMapper{
     SysUser findByUserNameAndPassWord(String userName,String password);
+
+    void updateSysUser(SysUser sysUser);
 }

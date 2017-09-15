@@ -1,6 +1,8 @@
 package com.crm.biz.customer.dao;
 
 import com.crm.entity.CstCustomer;
+import com.crm.entity.CstLabel;
+import com.crm.entity.CstLowCustomer;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
@@ -37,7 +39,7 @@ public interface CstCustomerMapper{
      * 添加用户信息
      * @param cstCustomer
      */
-    void addCstCustomerInfo(CstCustomer cstCustomer);
+    void addCstCustomerInfo(CstCustomer cstCustomer, CstLowCustomer cstLowCustomer, CstLabel cstLabel);
 
     /**
      * 筛选客户

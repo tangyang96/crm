@@ -2,6 +2,8 @@ package com.crm.biz.customer.service;
 
 
 import com.crm.entity.CstCustomer;
+import com.crm.entity.CstLabel;
+import com.crm.entity.CstLowCustomer;
 
 import java.util.Set;
 
@@ -19,7 +21,7 @@ public interface ICstCustomerService {
      * 添加客户信息
      * @param cstCustomer
      */
-    public void addCstCustomerInfo(CstCustomer cstCustomer);
+    public void addCstCustomerInfo(CstCustomer cstCustomer, CstLowCustomer cstLowCustomer, CstLabel cstLabel);
 
     /**
      * 筛选客户

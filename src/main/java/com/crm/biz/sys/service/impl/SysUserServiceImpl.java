@@ -18,4 +18,9 @@ public class SysUserServiceImpl implements ISysUserService {
       SysUser sysUser=  sysUserMapper.findByUserNameAndPassWord(userName,password);
         return sysUser;
     }
+
+    @Override
+    public void updateUserInfo(SysUser sysUser) {
+        sysUserMapper.updateSysUser(sysUser);
+    }
 }
